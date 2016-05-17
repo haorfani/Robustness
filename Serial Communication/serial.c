@@ -12,6 +12,9 @@
 while(1) {
      PROCESS_YIELD();
      if(ev == serial_line_event_message) {
+     	if((char*)data=="msg"){
+     		printf("ir8e minima!!!%s\n", );
+     	}
        printf("received line: %s\n", (char *)data);
      }
    }
